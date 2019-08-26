@@ -1,0 +1,10 @@
+---
+layout: post
+title: Первый листок
+date: '2019-08-26 23:25:00 +0300'
+categories: топология спецкурс задачи
+---
+
+##Хорошие новости!
+
+Первый листок по спецкурсу [доступен](https://github.com/igortsts/igortsts.github.io/blob/master/sheets/sheet1.pdf)
