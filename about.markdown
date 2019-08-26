@@ -4,15 +4,11 @@ title: Об авторе
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Меня зовут Игорь Цюцюрупа, я студент 1го курса магистратуры ФОПФ МФТИ. Это моя персональная страница. Сюда я буду выкладывать записки к курсу "Общая и алгебраическая топология", который я веду на кафедре математических основ управления МФТИ.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Вы можете писать мне в вк или любую другую соцсеть:
+[vk][vk]/
+[inst][inst]
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+[vk]: https://www.vk.com/igortsts
+[inst]: https://www.instagram.com/igortsts
