@@ -5,6 +5,7 @@ date: '2019-08-26 23:25:00 +0300'
 categories: топология спецкурс задачи
 ---
 
-##Хорошие новости!
+#Хорошие новости!
 
-Первый листок по спецкурсу [доступен](https://github.com/igortsts/igortsts.github.io/blob/master/sheets/sheet1.pdf)
+Первый листок по спецкурсу [доступен](http://igortsts.github.io/igortsts.github.io/docs/Intro.pdf)
+https://github.com/igortsts/igortsts.github.io/blob/master/docs/sheet1.pdf
