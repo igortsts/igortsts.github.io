@@ -10,5 +10,7 @@ permalink: /about/
 [vk][vk]/
 [inst][inst]
 
+Анонимные пожелания по какому бы то ни было вопросу можно оставить в [гугл форме](https://docs.google.com/forms/d/1IloXQKi5Pi6RlVf3uvSYoxrbiNnS4b3bD4C1Ln1KIRQ)
+
 [vk]: https://www.vk.com/igortsts
 [inst]: https://www.instagram.com/igortsts
