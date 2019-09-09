@@ -21,5 +21,5 @@ categories: топология спецкурс задачи конспект
 * [*А. Хатчер, "Алгебраическая топология"*](https://github.com/igortsts/igortsts.github.io/blob/master/docs/lit/hatcher.djvu) -- ставший классикой труд; почти всё, что укладывается в тему, вынесенную в названии, есть в этой книге. Можно читать после усвоения основных понятий общей топологии;
 * [*M. Aguilar, S. Gitler, C. Prieto, "Algebraic Topology from a Homotopical Viewpoint"*](https://github.com/igortsts/igortsts.github.io/blob/master/docs/lit/aguilar.djvu) -- мне нравится эта книга, потому что изложение ведётся на категорном языке, и это очень удобно;
 * [*Т. Панов, "Топология-1", 2018*](http://higeom.math.msu.su/people/taras/teaching/panov-topology1.pdf) -- при составлении лекций и задач я буду ориентироваться на этот курс, потому что когда-то сдал его сам;
-[А. Фоменко, Д. Фукс, "Курс гомотопической топологии", 1989]();
+* [А. Фоменко, Д. Фукс, "Курс гомотопической топологии", 1989]();
 * [J. Munkres, "Topology", 2014](https://github.com/igortsts/igortsts.github.io/blob/master/docs/lit/munkres.pdf).
