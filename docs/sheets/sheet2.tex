@@ -1,0 +1,105 @@
+\documentclass[a4paper]{article}
+\usepackage[12pt]{extsizes}
+% \usepackage[14pt]{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{geometry}
+\usepackage{fullpage}
+% \usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+
+\def \incl 	{\xhookrightarrow}
+
+\pagestyle{fancy}
+\headheight 35pt
+\lhead{\small{Кафедра МОУ, Общая и алгебраическая топология}}
+\rhead{\small{листок 2, \today}}
+% \lfoot{}
+% \cfoot{}
+% \rfoot{\small\thepage}
+\headsep 1.5em
+\pagenumbering{gobble}
+
+\newgeometry{
+    left=1.5em,
+    right=2em,
+    top=1.7cm,
+    bottom=1.0cm,
+}
+\fancyfootoffset{0pt}
+
+\begin{document}
+
+% \setlength{\headheight}{23pt}
+% \setlength{\parindent}{0.0in}
+% \setlength{\parskip}{0.0in}
+
+% \pagestyle{empty}
+% 	Кафедра МОУ, Основы общей и алгебраической топологии
+% }
+% \flushleft{
+% 	Кафедра МОУ, Основы общей и алгебраической топологии, листок 1, 1.9.2019 г.
+% }
+
+\begin{center}
+	\large{\textbf{Основные понятия (продолжение)}}
+\end{center}
+\begin{enumerate}
+	\item Непрерывный образ компакта компактен.
+	\item Если $X/A$ хаусдорфово, то $A\subset X$ замкнуто. Приведите пример, когда $A\subset X$ замкнуто, но $X/A$ не хаусдорфово.
+	\item Отрезок и окружность негомеоморфны. \textit{Указание.} Пространство $X$ называется \textit{связным}, если оно не может быть представлено в виде объединения двух непересекающихся открытых множеств, и \textit{несвязным} в противном случае. Покажите, что связность является топологическим инвариантом (то есть сохраняется при непрерывных отображениях).
+	\item Отрезок и интервал негомеоморфны. \textit{Указание.} Какой здесь подходящий инвариант?
+	\item а) Непрерывный образ отрезка --- отрезок.\\
+		б) \textbf{(Теорема Брауэра о неподвижной точке)} Пусть $f\colon[0,1]\to[0,1]$ непрерывно. Тогда существует точка $x\in[0,1]$ такая, что $x=f(x)$.
+	\item \textbf{(Теорема Борсука-Улама)} Если $g\colon S^1\to\mathbb{R}$ непрерывно, то существует точка $x\in S^1$ такая, что $g(x)=g(-x)$. (Неформальное следствие: в каждый момент времени на экваторе Земли есть пара противоположных точек с равными температурами воздуха.)
+	% \item Топология на $X\times Y$ --- слабейшая топология, относительно которой отображения проекции $\pi_X\colon X\times Y\to X$, $\pi_X(x,y)=x$, и $\pi_Y\colon X\times Y\to Y$, $\pi_Y(x,y)=y$, непрерывны.
+	\item \textbf{(Теорема Тихонова для конечного произведения)} Если $X$, $Y$ компактны, то $X\times Y$ компактно. (Теорема верна и для произвольного числа множителей: конечного, счётного, несчётного, неважно. Случай конечного произведения очевидно сводится к проверке для двух множителей, что можно сделать по-босяцки. В случае произвольного числа множителей теорема Тихонова следует из знаменитой аксиомы выбора и даже экивалентна ей.)
+\end{enumerate}
+
+\begin{center}
+	\large{\textbf{Пространства отображений}}
+\end{center}
+Напомню, что на пространстве отображений $\mathcal{C}(X,Y)=\{f\colon X\to Y|\ f\text{ непрерывно}\}$ вводится компактно-открытая топология: это слабейшая топология, в которой множества вида $U^K=\{f\colon X\to Y| f(K)\subset U\}$, где $K\subset X$ компактно, а $U\subset Y$ открыто, открыты.
+
+{\small Можно показать, что если $Y$ --- метрическое пространство с метрикой $d$, то эта топология порождается метрикой $\rho(f,g)=\sup\limits_{x\in X} d(f(x),g(x))$.}
+\begin{enumerate}
+	\setcounter{enumi}{7}
+	\item Пространство непрерывных отображений $\mathcal{C}(X,Y)$ с компактно-открытой топологией не зря также обозначается как $Y^X$. Постройте естественную биекцию и докажите гомеоморфность:
+	\begin{equation*}
+		\mathcal{C}(X,Y\times Z)\xrightarrow{\cong}\mathcal{C}(X,Y)\times\mathcal{C}(X,Z),\quad\text{или}\quad (Y\times Z)^X\cong Y^X\times Z^X.
+	\end{equation*}
+	\item Пространство $Y$ \textit{локально компактно}, если у каждой точки $y\in Y$ существует окрестность, замыкание которой компактно. (Вообще говоря, если $Y$ таково, что оно локально \textit{*свойство*}, то всегда подразумевается, что это свойство выполняется для какой-то окрестности каждой точки, то есть оно \textit{локально}). Определим отображение, ставящее в соответствие паре функций их композицию:
+	\begin{eqnarray*}
+		\Phi\colon\mathcal{C}(X,Y)\times\mathcal{C}(Y,Z)&\to&\mathcal{C}(X,Z)\\
+		(f,g)&\mapsto& g\circ f.
+	\end{eqnarray*}
+	Докажите, что если $Y$ локально компактно и хаусдорфово, то $\Phi$ непрерывно. В частности, отсюда следует, что отображение вычисления
+	\begin{eqnarray*}
+		\mathrm{eval}\colon Y\times\mathcal{C}(Y,Z)&\to&Z\\
+		(y,f)&\mapsto& f(y).
+	\end{eqnarray*}
+	непрерывно. Где в курсе линейной алгебры оно встречается?
+	\item \textbf{(Экспоненциальный закон (сложная задача))} Определено естественное отображение
+	\begin{equation*}
+		\Phi\colon Z^{X\times Y}\to\left(Z^Y\right)^X,
+	\end{equation*}
+	ставящее в соответствие отображению $f\colon X\times Y\to Z$ отображение $\Phi(f)\colon X\to Z^Y$, переводящее $x\in X$ в отображение $\Phi(f)(x)(\cdot)=f(x,\cdot)$. Покажите, что $\Phi$ биективно, а также что если $X$ хаусдорфово, а $Y$ хаусдорфово и локально компактно, то $\Phi$ --- гомеоморфизм.
+	\item Открыто ли множество $\{f\in C[0,1]|\ \forall x\in[0,1]\ 0<f(x)<1\}$?
+	\item (Для слушателей Константинова) Верно ли, что топология поточечной сходимости на пространстве отображений $\mathcal{C}([0,1],\mathbb{R})$ делает его гомеоморфным произведению $\prod\limits_{x\in[0,1]}\mathbb{R}$?
+	\item Верно ли, что топология на $Y^X$ совпадает с топологией произведения $\prod\limits_{x\in X} Y$ для произвольного $X$?
+\end{enumerate}
+
+\end{document}
